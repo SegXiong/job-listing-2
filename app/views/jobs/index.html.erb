@@ -2,7 +2,7 @@
   <%= link_to("Add a job", new_job_path, :class => "btn btn-default") %>
 </div>
 <table class="table table-boldered">
-  <% @job.each do |job| %>
+  <% @jobs.each do |job| %>
   <tr>
     <td>
       <%= link_to(job.title, job_path(job)) %>
