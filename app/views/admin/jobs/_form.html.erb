@@ -1,9 +1,13 @@
-<%= simple_form_for [:admin, @job] do |f| %>
-<%= f.input :title %>
-<%= f.input :description %>
-<%= f.input :wage_lower_bound, :label => "薪资下限" %>
-<%= f.input :wage_upper_bound, :label => "薪资上限" %>
-<%= f.input :contact_email %>
-<%= f.input :is_hidden %>
-<%= f.submit "Submit" %>
-<% end %>
+<div class="add-job col-md-6 col-md-offset-2">
+  <div class="row">
+    <%= simple_form_for [:admin, @job] do |f| %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :wage_lower_bound, :label => "薪资下限" %>
+    <%= f.input :wage_upper_bound, :label => "薪资上限" %>
+    <%= f.input :contact_email %>
+    <%= f.input :is_hidden %>
+    <%= f.submit "Submit", :class => "btn btn-md btn-info"%>
+    <% end %>
+  </div>
+</div>

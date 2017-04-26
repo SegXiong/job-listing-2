@@ -1,4 +1,11 @@
-<h1> <%= @job.title %> </h1>
-<p>
-  <%= simple_format(@job.description) %>
-</p>
+<div class="admin-show col-md-10">
+  <div class="row">
+    <div class="cus-admin-show-head">
+        <h1 class="cus-admin-show-content"> <%= @job.title %> </h1>
+    </div>
+    <div class="admin-pricetag">薪资范围：<span style="color:#fd5f39;"><%= @job.wage_lower_bound %> ~ <%= @job.wage_upper_bound %></span></div>
+    <div class="admin-show-job">
+      <%= simple_format(@job.description) %>
+    </div>
+  </div>
+</div>

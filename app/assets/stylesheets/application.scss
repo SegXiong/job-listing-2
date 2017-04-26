@@ -230,7 +230,7 @@ html {
   border: 1px solid #ccc;
 
   padding: 5px;
-  margin: 5% 0;
+  margin: 10% 0;
   box-shadow: 3px 3px 2px #ccc;
 
   transition: 0.5s;
@@ -334,4 +334,39 @@ html {
 
 .login-help{
   font-size: 12px;
+}
+//----- admin add job -------
+.add-job {
+  margin-top: 80px;
+}
+//----- admin show job ------
+.admin-show {
+  margin-top: 100px;
+  margin-left: 30px;
+  background-color: #f8f8f8;
+}
+
+.cus-admin-show-head {
+  background-color: #ebf0ef;
+  padding: 30px,11px;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+
+.cus-admin-show-content {
+  line-height: 80px;
+}
+
+.admin-show-job {
+  font-size: 20px;
+  margin-top: -20px;
+  padding: 20px;
+  color: inherit;
+}
+
+.admin-pricetag {
+  font-size: 20px;
+  color: #37474F;
+  padding: 20px;
 }
