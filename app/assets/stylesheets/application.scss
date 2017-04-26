@@ -90,6 +90,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 110px;
+  margin-top: -22px !important;
 }
 
 .title {
@@ -204,7 +205,7 @@
   transition: 0.5s;
 }
 
-/****** LOGIN MODAL ******/
+//------- LOGIN MODAL --------
 .loginmodal-container {
   padding: 30px;
   max-width: 350px;
