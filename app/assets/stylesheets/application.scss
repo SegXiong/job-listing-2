@@ -100,7 +100,7 @@ html {
 //-------box-------
 
 .jumbotron {
-  background-image:url('/images/boxpic1.jpg');
+  background-image:url("/images/boxpic1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 110px;
@@ -390,6 +390,7 @@ html {
   margin-top: 100px;
   margin-left: 30px;
   background-color: #f8f8f8;
+
 }
 
 .cus-admin-show-head {
@@ -452,7 +453,7 @@ html {
 //------ user session ------
 .login-bg {
   height: 750px;
-  background-image:url('/images/login-bg.jpg');
+  background-image:url("/images/login-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
