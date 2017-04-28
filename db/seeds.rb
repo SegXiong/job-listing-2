@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts '设置管理员，生成隐藏job和显示job'
-create_account = User.create([email: 'xyy123@gmail.com', password: 'xyy123',
-                 password_confirmation: 'xyy123', is_admin: 'true'])
+create_account = User.create([email: 'Segue@gmail.com', password: '123456',
+                 password_confirmation: '123456', is_admin: 'true'])
 puts '管理员设置成果'
 
 job_info = ['Developer',
