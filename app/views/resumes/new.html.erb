@@ -1,7 +1,15 @@
-<h3> 投递简历到<%= @job.title %> </h3>
-<hr />
-<%= simple_form_for [@job, @resume] do |f| %>
-<%= f.input :content %>
-<%= f.input :attachment %>
-<%= f.submit "Submit" %>
-<% end %>
+<div class="new-resume col-md-6 col-md-offset-3">
+  <div class="row">
+    <div class="panel panel-primary">
+      <div class="panel-heading palhea">投递简历到 <%= @job.title %></div>
+        <div class="resume-body">
+          <%= simple_form_for [@job, @resume] do |f| %>
+          <%= f.input :content %>
+          <%= f.input :attachment %>
+          <%= f.submit "Submit", :class => "btn btn-md btn-info" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

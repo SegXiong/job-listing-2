@@ -1,5 +1,5 @@
-<div class="dropdown clearfix pull-right">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+<div class="dropdown clearfix pull-right orderbtn">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     排序
     <span class="caret"></span>
   </button>
@@ -15,34 +15,37 @@
     </li>
   </ul>
 </div>
-</div>
-<table class="table table-boldered">
-  <thead>
-    <tr>
-      <td>职缺</td>
-      <td>薪资下限</td>
-      <td>薪资上限</td>
-      <td>发布时间</td>
-    </tr>
-  </thead>
-  <tbody>
-  <% @jobs.each do |job| %>
-  <tr>
-    <td>
-      <%= link_to(job.title, job_path(job)) %>
-    </td>
-    <td>
-      <%= job.wage_lower_bound %>
-    </td>
-    <td>
-      <%= job.wage_upper_bound %>
-    <td>
-      <%= job.created_at %>
-    </td>
-  </tr>
-  <% end %>
-</tbody>
-</table>
-<div class="text-center">
-  <%= will_paginate @jobs %>
-</div>
+
+<div class="panel panel-info cuspanel col-md-10 col-md-offset-1">
+  <div class="panel-heading pahead">Trending</div>
+    <table class="table table-boldered table-striped custab2">
+      <thead>
+        <tr>
+          <td>职缺</td>
+          <td>薪资下限</td>
+          <td>薪资上限</td>
+          <td>发布时间</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% @jobs.each do |job| %>
+        <tr>
+          <td>
+            <%= link_to(job.title, job_path(job)) %>
+          </td>
+          <td>
+            <%= job.wage_lower_bound %>
+          </td>
+          <td>
+            <%= job.wage_upper_bound %>
+          <td>
+            <%= job.created_at %>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="text-center">
+    <%= will_paginate @jobs %>
+  </div>

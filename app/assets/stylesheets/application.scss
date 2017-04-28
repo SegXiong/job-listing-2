@@ -27,6 +27,7 @@ html {
  body {
    /* Margin bottom by footer height */
    margin-bottom: 100px;
+   background-color: #f5f5f5;
  }
 
 //------navbar------
@@ -247,6 +248,36 @@ html {
   text-align: center;
 }
 
+//------- job table --------
+.orderbtn {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.cuspanel {
+  margin-top: 70px;
+  padding: 0 !important;
+}
+
+.palhead {
+  font-size: 20px;
+  padding: 7px !important;
+}
+
+.custab2{
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-shadow: 3px 3px 2px #ccc;
+
+  transition: 0.5s;
+}
+
+.custab2:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
+}
+
+
 //------- LOGIN MODAL --------
 .loginmodal-container {
   padding: 30px;
@@ -345,6 +376,15 @@ html {
 .add-job {
   margin-top: 80px;
 }
+
+.admin-palhea {
+  font-size: 20px;
+  text-align: center;
+}
+
+.job-body {
+  padding: 10px;
+}
 //----- admin show job ------
 .admin-show {
   margin-top: 100px;
@@ -375,4 +415,36 @@ html {
   font-size: 20px;
   color: #37474F;
   padding: 20px;
+}
+
+//----- show job ------
+.job-show {
+  margin-top: 30px;
+  background-color: #f8f8f8;
+}
+
+.resumebtn {
+  color: #ffffff;
+  margin-top: 30px;
+  margin-right: 120px;
+
+}
+
+//------ new resume ------
+.new-resume {
+  margin-top: 80px;
+}
+
+.resume-body {
+  padding: 10px;
+}
+
+.palhea {
+  font-size: 20px;
+  text-align: center;
+}
+
+//------ resume list -------
+.resumeind {
+  margin-top: 10px;
 }
