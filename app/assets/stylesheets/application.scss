@@ -35,6 +35,8 @@ html {
 
      border-color: #233140; //边框色
 
+     margin-top: 20px;
+
      margin-bottom: 0; //底部 margin 不撑开距离
  }
 
@@ -230,7 +232,7 @@ html {
   border: 1px solid #ccc;
 
   padding: 5px;
-  margin: 10% 0;
+  margin: 5% 0;
   box-shadow: 3px 3px 2px #ccc;
 
   transition: 0.5s;
@@ -239,6 +241,10 @@ html {
 .custab:hover{
   box-shadow: 3px 3px 0px transparent;
   transition: 0.5s;
+}
+
+.form-title {
+  text-align: center;
 }
 
 //------- LOGIN MODAL --------
