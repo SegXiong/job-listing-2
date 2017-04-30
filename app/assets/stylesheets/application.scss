@@ -39,6 +39,7 @@ html {
      margin-top: 20px;
 
      margin-bottom: 0; //底部 margin 不撑开距离
+
  }
 
  @media (min-width: 768px) {
@@ -212,6 +213,63 @@ html {
 .row {
   margin-top: -20px;
 }
+
+//------- tool bar ------
+
+.logintoolbar {
+  width: 100%;
+  height: 64px;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  right: 0 ;
+}
+
+.huebg {
+  background-image: linear-gradient(to right, #09203f 0%, #537895 100%);
+}
+
+.toolslogan {
+  height: 64px;
+  padding-left: 50px;
+  font-size: 20px;
+  color: #ffffff;
+  padding-top: 4px;
+  ;
+}
+
+.bar-login {
+  height: 64px;
+  position: absolute;
+  right: 300px;
+  top: 15px;
+  float: left;
+  margin-top: 0;
+  font-size: 25px;
+}
+
+.bar-right {
+  height: 64px;
+  position: absolute;
+  right: 100px;
+  top: 15px;
+  font-size: 25px;
+}
+
+.bar-login > a,
+.bar-right > a {
+  color: #df89b5;
+}
+
+.bar-login > a:hover,
+.bar-right > a:hover {
+  color: #bfd9fe;
+  text-decoration: none;
+}
+
+
 
 //------- footer -------
   .footer {
