@@ -4,6 +4,7 @@
 
 </head>
 
+  <body>
   <div class="row bigCarousel">
   <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
 
@@ -198,3 +199,21 @@
     </div>
   </div>
   <% end %>
+</body>
+
+<!-- Script to Activate the Carousel -->
+    <script>
+      $('.carousel').carousel({
+          interval: 5000 //changes the speed
+      })
+      $('#bootstrap-touch-slider').bsTouchSlider();
+    </script>
+
+   <script>
+      $(document).ready(function () {
+      $('.material-button-toggle').click(function () {
+          $(this).toggleClass('open');
+          $('.option').toggleClass('scale-on');
+      });
+     });
+  </script>
