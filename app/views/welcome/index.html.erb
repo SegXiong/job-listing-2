@@ -1,64 +1,89 @@
-  <div class="jumbotron">
-    <div class="transpview">
-    <h1 class="title"> Offer · 无忧 </h1>
-    <p class="slogan">发现潜力未来
-    <br>
-    尽在无忧
-    </p>
-    <p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">马上应征</a></p>
-    </div>
-  </div>
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
 
-  <section id="testimony" class="jumbotron2">
-    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="container">
-        <!-- <div class="col-lg-12 text-center">
-          <h3>媒体评语言</h3>
-          <hr class="star-secondary" style="margin-bottom: 20px;">
-        </div> -->
+</head>
 
-      <div class="carousel-inner testimonial" role="listbox">
-        <div class="item active">
-          <h4>No.1 customer satisfaction
-            <br />
-            <br />
-            <span style="font-style:normal;">- Reuters</span>
-          </h4>
-        </div>
+  <div class="row bigCarousel">
+  <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
 
-        <div class="item">
-          <h4>Best of 2017
-            <br />
-            <br />
-            <span style="font-style:normal;">- Bloomberg</span>
-          </h4>
-        </div>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+                <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+            </ol>
 
-          <div class="item">
-            <h4>Top 5 globlal platform
-              <br />
-              <br />
-              <span style="font-style:normal;">- New Yorker</span>
-            </h4>
-          </div>
-        </div>
+            <!-- Wrapper For Slides -->
+            <div class="carousel-inner" role="listbox">
 
-        <div class="control">
-          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          </a>
+                <!-- Third Slide -->
+                <div class="item active">
+
+                    <!-- Slide Background -->
+                    <img src="images/login-bg.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <!-- Slide Text Layer -->
+                            <div class="slide-text slide_style_left">
+                                <h1 data-animation="animated zoomInRight">Offer · 无忧</h1>
+                                <p data-animation="animated fadeInLeft">Bootstrap carousel now touch enable slide.</p>
+                                <a href="/jobs" target="_blank" class="btn btn-danger" data-animation="animated fadeInLeft">马上应征</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+                <!-- Second Slide -->
+                <div class="item">
+
+                    <!-- Slide Background -->
+                    <img src="images/pic-1.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_center">
+                        <h1 data-animation="animated flipInX">Offer · 无忧</h1>
+                        <p data-animation="animated lightSpeedIn">Make Bootstrap Better together.</p>
+                        <a href="/jobs" target="_blank" class="btn btn-danger" data-animation="animated fadeInUp">马上应征</a>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+                <!-- Third Slide -->
+                <div class="item">
+
+                    <!-- Slide Background -->
+                    <img src="images/boxpic1.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+                    <!-- Slide Text Layer -->
+                    <div class="slide-text slide_style_right">
+                        <h1 data-animation="animated zoomInLeft">Offer · 无忧</h1>
+                        <p data-animation="animated fadeInRight">Lots of css3 Animations to make slide beautiful .</p>
+                        <a href="/jobs" target="_blank" class="btn btn-danger" data-animation="animated fadeInLeft">马上应征</a>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+
+            </div><!-- End of Wrapper For Slides -->
+
+            <!-- Left Control -->
+            <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!-- Right Control -->
+            <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
         </div>
       </div>
-    </div>
-  </section>
 
 
 <div class="row">
@@ -111,13 +136,64 @@
    </div>
  </div>
 
+ <section id="testimony" class="jumbotron2">
+   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+     <ol class="carousel-indicators">
+       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+       <li data-target="#myCarousel" data-slide-to="1"></li>
+       <li data-target="#myCarousel" data-slide-to="2"></li>
+     </ol>
+     <div class="container">
+       <!-- <div class="col-lg-12 text-center">
+         <h3>媒体评语言</h3>
+         <hr class="star-secondary" style="margin-bottom: 20px;">
+       </div> -->
+
+     <div class="carousel-inner testimonial" role="listbox">
+       <div class="item active">
+         <h4>No.1 customer satisfaction
+           <br />
+           <br />
+           <span style="font-style:normal;">- Reuters</span>
+         </h4>
+       </div>
+
+       <div class="item">
+         <h4>Best of 2017
+           <br />
+           <br />
+           <span style="font-style:normal;">- Bloomberg</span>
+         </h4>
+       </div>
+
+         <div class="item">
+           <h4>Top 5 globlal platform
+             <br />
+             <br />
+             <span style="font-style:normal;">- New Yorker</span>
+           </h4>
+         </div>
+       </div>
+
+       <div class="control">
+         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+         </a>
+         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+         </a>
+       </div>
+     </div>
+   </div>
+ </section>
+
  <% if !current_user %>
   <div class="logintoolbar" id="logintoolbar">
     <div class="row huebg">
       <div class="toolcontent">
         <div class="toolslogan">在无忧<br />发现新的职业机会</div>
         <div class="bar-login"><%= link_to("登入", new_user_session_path) %></div>
-        <div class="bar-right"><%= link_to("极速注册", new_user_registration_path) %> <span class="fa fa-arrow-circle-right"></span></div>
+        <div class="bar-right"><span class="fa fa-arrow-circle-right"></span> <%= link_to("极速注册", new_user_registration_path) %></div>
       </div>
     </div>
   </div>
