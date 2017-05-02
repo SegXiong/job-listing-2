@@ -187,6 +187,44 @@ html {
      border-radius: 3px;//btn圆角
  }
 
+ //------ carousel ------
+ .jumbotron2 {
+   background-repeat: no-repeat;
+   box-sizing: border-box;
+   //background-color: #868f96;
+   background-image: linear-gradient(75deg, #CBBACC 0%, #2580B3 100%);
+   margin-top: 30px;
+   margin-bottom: 30px;
+   padding-bottom: 30px;
+ }
+
+ .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #596164;
+}
+
+.carousel-indicators li {
+    border-color: #596164;
+}
+
+.carousel-indicators li.active {
+    background-color: #596164;
+}
+
+.item h4 {
+    font-size: 25px;
+    line-height: 1.375em;
+    font-weight: 400;
+    margin: 70px 0;
+    color: white;
+}
+
+.item span {
+    font-style: italic !important;
+    font-size: 19px;
+    color: white;
+}
+
 //------- content -------
  .content-section-a {
       padding: 50px 0;
