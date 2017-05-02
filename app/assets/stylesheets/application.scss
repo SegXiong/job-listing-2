@@ -49,45 +49,45 @@ html {
  }
 
  .navbar-default .navbar-brand {
-  color: #EF6C00; //字体颜色
+  color: #FFE6FA; //字体颜色
 
-  padding: 10px 15px; //上下10px，左右15px
+  padding: 10px 30px; //上下10px，左右15px
   line-height: 30px; //文字行高
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #FF6F00; //鼠标放置在链接上的文字颜色
+  color: #E3FDF5; //鼠标放置在链接上的文字颜色
 
   background-color: transparent; //鼠标放置在链接上的背景颜色，这里设为透明
 }
 
  .navbar-default .navbar-nav > li > a{
-   color: #EF6C00;
+   color: #FFE6FA;
 
  }
 
  .navbar-default .navbar-nav > li > a:hover,
  .navbar-default .navbar-nav > li > a:focus {
-   color: #FF6F00;
+   color: #E3FDF5;
 
    background-color: transparent;
  }
  .navbar-default .navbar-nav > .active > a,
  .navbar-default .navbar-nav > .active > a:hover,
  .navbar-default .navbar-nav > .active > a:focus {
-   color: #FF6F00;
+   color: #FFE6FA;
 
-   background-color: #FFE0B2;
+   background-color: #2580B3;
 
  }
 
  .navbar-default .navbar-nav > .open > a,
  .navbar-default .navbar-nav > .open > a:focus,
  .navbar-default .navbar-nav > .open > a:hover {
-   background-color: #FFE0B2;
+   background-color: #2580B3;
 
-   color: #212121;
+   color: #FFE6FA;
 
  }
 
@@ -96,6 +96,10 @@ html {
      margin-right: 10px; //图片和链接文字拉开一点距离
      width: 32px; //定制图片宽度
      height: 32px; //定制图片高度
+ }
+
+ .navbar-right {
+   padding-right: 10px;
  }
 
 //-------box-------
@@ -163,16 +167,16 @@ html {
    .btn-danger {
      color: #fff;//字体颜色
 
-     background-color: #EF6C00;//背景颜色
+     background-color: #00ecbc;//背景颜色
 
-     border-color: #EF6C00;//边框颜色
+     border-color: #00ecbc;//边框颜色
 
  }
 
  .btn-danger:hover {
-     background-color: #E65100;//鼠标放置在btn上的背景颜色
+     background-color: #c43a30;//鼠标放置在btn上的背景颜色
 
-     border-color: #E65100;//鼠标放置在btn上的边框颜色
+     border-color: #c43a30;//鼠标放置在btn上的边框颜色
 
  }
 
@@ -228,14 +232,17 @@ html {
 }
 
 .huebg {
+  height: 64px;
   background-image: linear-gradient(to right, #09203f 0%, #537895 100%);
 }
 
 .toolslogan {
+  position: absolute;
+  left: 0;
   height: 64px;
   padding-left: 50px;
   font-size: 20px;
-  color: #ffffff;
+  color: #FFE6FA;
   padding-top: 4px;
   ;
 }
