@@ -470,6 +470,10 @@ html {
 
 }
 
+.pahead {
+  font-size: 22px;
+}
+
 //------ new resume ------
 .new-resume {
   margin-top: 80px;
@@ -831,4 +835,8 @@ html {
         display: none;
     }
 
+}
+//------ font-awesome -------
+.fa-heart, .fa-heart-o {
+  color: red;
 }

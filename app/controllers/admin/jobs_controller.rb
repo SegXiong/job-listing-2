@@ -37,7 +37,7 @@ class Admin::JobsController < ApplicationController
   def update
     @job = Job.find(params[:id])
     if @job.update(job_params)
-      redirect_to admin_jobs_path, notice: "Job Updated"
+      redirect_to admin_jobs_path, notice: "更新成功"
     else
       render :edit
 
@@ -48,7 +48,7 @@ class Admin::JobsController < ApplicationController
   def destroy
     @job = Job.find(params[:id])
     @job.destroy
-    redirect_to admin_jobs_path, alert: "Job Deleted"
+    redirect_to admin_jobs_path, alert: "删除成功"
 
   end
 

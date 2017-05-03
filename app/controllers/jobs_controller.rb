@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :collect, :discollect]
   def index
     @jobs = case params[:order]
     when 'by_lower_bound'
@@ -58,6 +58,33 @@ class JobsController < ApplicationController
 
       end
 
+    end
+
+    def collect
+      @job = Job.find(params[:id])
+      if !current_user.favorite?(@job)
+        current_user.collect!(@job)
+        flash[:notice] = "收藏成功"
+
+      else
+        flash[:warning] = "已经收藏过该工作"
+
+      end
+        redirect_to :back
+
+    end
+
+    def discollect
+      @job = Job.find(params[:id])
+      if current_user.favorite?(@job)
+        current_user.discollect!(@job)
+        flash[:alert] = "已取消收藏"
+
+      else
+        flash[:warning] = "无此收藏"
+
+      end
+        redirect_to :back
     end
 
 
