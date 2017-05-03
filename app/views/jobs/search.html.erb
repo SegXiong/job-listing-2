@@ -1,5 +1,5 @@
 <div>
-<% if @query_string.blank? %>
+  <% if @query_string.blank? %>
     <div class="search-info-error">
       <h4><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i> 搜索信息不能为空，请输入关键字搜索。</h4>
       <div class="text-center" style="margin-top: 20px;">
@@ -14,40 +14,42 @@
         <%= link_to("查看职位列表", jobs_path, :class => "btn btn-lg btn-success") %>
       </div>
     </div>
+
   <% else %>
-    <div class="panel panel-info cuspanel col-md-10 col-md-offset-1">
-      <div class="panel-heading pahead">有关"<%= @query_string %>"的工作信息</div>
-        <table class="table table-boldered table-striped custab2">
-          <thead>
-            <tr>
-              <td>职缺</td>
-              <td>薪资下限</td>
-              <td>薪资上限</td>
-              <td>发布时间</td>
-            </tr>
-          </thead>
-          <tbody>
-            <% @jobs.each do |job| %>
-            <tr>
-              <td>
-                <%= link_to(render_highlight_content(job, @query_string), job_path(job)) %>
-              </td>
-              <td>
-                <%= job.wage_lower_bound %>
-              </td>
-              <td>
-                <%= job.wage_upper_bound %>
-              <td>
-                <%= job.created_at %>
-              </td>
-            </tr>
-            <% end %>
-          </tbody>
-        </table>
+    <div class="col-md-10 col-md-offset-1">
+      <div class="text-center search-result">
+        <h2>有关"<%= @query_string %>"的工作信息</h2>
       </div>
-      <div class="text-center wpage">
-        <%= will_paginate @jobs, :previous_label => "« 上一页", :next_label => "下一页 »", renderer: BootstrapPagination::Rails %>
+
+      <div class="panel panel-info cuspanel col-md-8 col-md-offset-2">
+        <% @jobs.each do |job| %>
+        <div class="panel-heading pahead"><%= link_to(render_highlight_content(job, @query_string), job_path(job)) %></div>
+        <div class="panel-body">
+          <div class="col-md-6 info">
+            <div class="info-up">
+              <p><i class="fa fa-tag" aria-hidden="true"></i> <%= job.wage_lower_bound %> ~ <%= job.wage_upper_bound %></p>
+            </div>
+            <div class="info-down">
+              <p><i class="fa fa-calendar" aria-hidden="true"></i> <%= job.created_at %> </p>
+            </div>
+          </div>
+          <div class="col-md-6 access">
+            <div class="access-top">
+              <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> 认证企业</p>
+            </div>
+            <div class="access-down">
+              <p><i class="fa fa-paper-plane" aria-hidden="true"></i> <%= link_to("了解详情", job_path(job)) %></p>
+            </div>
+          </div>
+        </div>
+        <% end %>
       </div>
-    </div>
+
+
+
+  <div class="text-center">
+    <%= will_paginate @jobs, :previous_label => "« 上一页", :next_label => "下一页 »", renderer: BootstrapPagination::Rails %>
+  </div>
   <% end %>
-</div>
+
+  </div>

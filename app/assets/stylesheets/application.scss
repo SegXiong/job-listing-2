@@ -290,11 +290,12 @@ html {
 //------- job table --------
 .orderbtn {
   margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .cuspanel {
   margin-top: 70px;
+  margin-right: 100px;
   padding: 0 !important;
 }
 
@@ -843,8 +844,8 @@ html {
 
 //------ searchbox -------
 .searchbox {
-  margin-top: 20px;
-  margin-right: 5.5%;
+  margin-top: 30px;
+  margin-right: 14%;
 }
 //------ search page ------
 .search-info-error {
@@ -857,4 +858,9 @@ html {
   position: absolute;
   top: 40%;
   left: 48%;
+}
+
+.search-result {
+  margin-top: 50px;
+  margin-bottom: -50px;
 }
