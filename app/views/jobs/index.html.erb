@@ -1,4 +1,4 @@
-<div class="row" style="margin-top: 0; margin-bottom: 180px;">
+<div class="row" style="margin-top: 0; margin-bottom: 300px;">
 <div class="dropdown clearfix pull-right orderbtn">
   <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     排序
@@ -48,7 +48,7 @@
     </table>
   </div>
   <div class="text-center">
-    <%= will_paginate @jobs %>
+    <%= will_paginate @jobs, :previous_label => "« 上一页", :next_label => "下一页 »", renderer: BootstrapPagination::Rails %>
   </div>
 </div>
 

@@ -37,5 +37,5 @@
 </tbody>
 </table>
 <div class="text-center">
-  <%= will_paginate @jobs %>
+  <%= will_paginate @jobs, :previous_label => "« 上一页", :next_label => "下一页 »", renderer: BootstrapPagination::Rails %>
 </div>

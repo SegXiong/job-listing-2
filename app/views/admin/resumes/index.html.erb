@@ -2,3 +2,6 @@
 <h2 style="text-align: center"> <%= @job.title %> - 简历列表 </h2>
 <hr />
 <%= render :partial => "resume", :collection => @resumes, :as => :resume %>
+<div class="text-center">
+  <%= will_paginate @jobs, :previous_label => "« 上一页", :next_label => "下一页 »", renderer: BootstrapPagination::Rails %>
+</div>
