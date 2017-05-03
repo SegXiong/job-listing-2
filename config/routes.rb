@@ -5,6 +5,9 @@ Rails.application.routes.draw do
       post :collect
       post :discollect
     end
+    collection do
+      get :search
+    end
     resources :resumes
   end
 
